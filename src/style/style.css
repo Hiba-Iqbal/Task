@@ -1,0 +1,276 @@
+/* CSS STYLING */
+
+/* Dashboard.css */
+
+.dashboard-container {
+  display: grid;
+  grid-template-rows: 1fr auto;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 20px;
+  padding: 20px;
+}
+
+.dashboard-item {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 768px) {
+  .dashboard-container {
+    grid-template-rows: auto auto;
+    grid-template-columns: 1fr;
+  }
+}
+
+/* IndividualPlayerStats.css */
+
+.individual-player-stats-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+
+.player-list {
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+}
+
+.player-list-item{
+  padding: 20px;
+}
+
+.player-name {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+
+/* TeamsPerformance.css */
+
+.teams-performance-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* display: flex; */
+}
+.teams-performance-list{
+  padding: 0px 10px 10px 10px;
+}
+.teams-performance-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* UpcomingMatches.css */
+
+.upcoming-matches-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  display:flex;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.upcoming-matches-list{
+  padding: 20px;
+}
+
+.upcoming-matches-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+
+/* Match Scheduling */
+.match-scheduling-container {
+    padding: 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .match-card {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  .match-card .team-names {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .match-card .team-names .home-team {
+    font-weight: bold;
+  }
+  
+  .match-card .match-info {
+    display: flex;
+    justify-content: space-between;
+    color: #555;
+  }
+  
+  .match-card .progress-bar {
+    width: 100%;
+    height: 10px;
+    background-color: #eee;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .match-card .progress-bar .progress {
+    height: 100%;
+    background-color: #007bff;
+    border-radius: 5px;
+  }
+  
+  .match-card .progress-bar .progress[data-progress='0'] {
+    width: 0;
+  }
+  
+  .match-card .progress-bar .progress[data-progress='100'] {
+    width: 100%;
+  }
+ 
+  /* ----------------------- */
+  
+  /* Team Setup CSS */ 
+
+.team-setup-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .team-setup-heading {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .team-setup {
+    background-color: #f9f9f9;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .team-name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .player-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .player-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .player-info {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .player-name {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .player-position {
+    font-size: 14px;
+    color: #888;
+  }
+  
+  /* ----------------------- */
+
+  /* Sidebar.css */
+
+.sidebar {
+  background-color: #1a1a1a;
+  width: 250px;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.sidebar-menu li {
+  margin-bottom: 10px;
+}
+
+.sidebar-menu a {
+  display: block;
+  padding: 10px 20px;
+  text-decoration: none;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.sidebar-menu a:hover {
+  background-color: #333;
+}
+
+.sidebar-menu a.active {
+  background-color: #555;
+}
+/* DetailedScoreCard.css */
+.detailed-scorecard-container{
+  padding: 0px 20px;
+  background-color: #f9f9f9;
+}
+/* .detailed-scorecard-list{
+  padding: 20px;
+} */
+.detailed-scorecard {
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.scorecard-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.team-info {
+  margin-bottom: 20px;
+}
+
+.team-name {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.team-stat {
+  font-size: 16px;
+  margin-bottom: 5px;
+  color: #666;
+}
